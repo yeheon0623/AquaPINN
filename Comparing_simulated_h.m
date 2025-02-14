@@ -3,14 +3,14 @@ close all
 clear all
 
 %load the obtained results
-load results_lower_observations(90)_200epochs_25000CP.mat parameters
+load results(90)_200epoche_35000cp.mat parameters
 
 % Define X and Z nodes
 x_node=20;
 z_node=20;
 
 %Import observed data
-C=importdata("Observations_homogeneous_isotropic.xlsx");
+C=importdata("Observations_heterogeneous_anisotropic.xlsx");
 data=C.data.Foglio1;
 X=data(:,1);
 Z=data(:,3);

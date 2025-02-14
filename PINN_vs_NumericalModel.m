@@ -1,9 +1,9 @@
 clear all
 close all
 clc
-load results_lower_observations(90)_200epochs_25000CP.mat parameters parameters2
+load results(90)_200epoche_35000cp.mat parameters parameters2
 %Import observed data
-C=importdata("Observations_homogeneous_isotropic.xlsx");
+C=importdata("Observations_heterogeneous_anisotropic.xlsx");
 data=C.data.Foglio1;
 X=data(:,1);
 Z=data(:,3);
